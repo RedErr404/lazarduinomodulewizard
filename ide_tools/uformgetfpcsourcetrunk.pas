@@ -5,7 +5,7 @@ unit uFormGetFPCSourceTrunk;
 interface
 
 uses
-  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, ComCtrls,
+  Classes, SysUtils, FileUtil, LazFileUtils, Forms, Controls, Graphics, Dialogs, ComCtrls,
   StdCtrls, Buttons, ExtCtrls;
 
 type

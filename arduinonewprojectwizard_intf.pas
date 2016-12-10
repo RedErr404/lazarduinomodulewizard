@@ -7,7 +7,7 @@ interface
 uses
 
   uArduinoFormWorkspace,
-  FileUtil, StrUtils,
+  FileUtil, LazFileUtils, StrUtils,
   Classes, SysUtils, Controls, Forms, Dialogs,
   LazIDEIntf, ProjectIntf;
 
@@ -81,7 +81,7 @@ begin
     FPathToCodeTemplates:= frm.PathToCodeTemplates;
 
     ForceDirectory(FProjectPath);
-    chdir(FProjectPath);
+    //chdir(FProjectPath); - fix error [not found fpc.exe]
 
     installList:= TStringList.Create;   //thanks to @HatForGat!
     installList.Add(FPathToArduinoIDE+DirectorySeparator+

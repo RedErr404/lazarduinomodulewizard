@@ -5,7 +5,7 @@ unit uformlamwinosettingspaths;
 interface
 
 uses
-  inifiles, Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs,
+  inifiles, Classes, SysUtils, FileUtil, LazFileUtils, Forms, Controls, Graphics, Dialogs,
   StdCtrls, Buttons, ExtCtrls, ComCtrls, LazIDEIntf {$IFDEF WINDOWS}, Registry {$ENDIF} ;
 
 type
